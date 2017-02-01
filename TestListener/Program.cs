@@ -26,7 +26,7 @@ public class serv
         NetworkStream stream = client.GetStream();
         stream.Read(b, 0, b.Length);
 
-        Console.WriteLine("Recieved...");
+        Console.WriteLine("Recieved..."); 
         string nombre = System.Text.Encoding.UTF8.GetString(b); ;
 
         for (int i = 0; i < b.Length; i++)
